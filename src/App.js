@@ -1,6 +1,5 @@
 import React from 'react'
-
-
+import RegistrationForm from './RegistrationForm';
 
 const App = () => {
   return (
@@ -12,6 +11,7 @@ const App = () => {
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <div
+          
             className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
             <div className="md:ml-auto">
             <a 
@@ -24,8 +24,7 @@ const App = () => {
             </div>
           </div>
         </div>
-      </nav>
-      
+      </nav> 
     <section className="py-4">
       <div className="container-xl lg:container m-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
@@ -84,11 +83,13 @@ const App = () => {
             </h2>
           </header>
         </div>
+        <RegistrationForm />
+        <img src="images/edutechrittlogo.jpg" alt="logo" className="logo-image" />
 
         <div className="footer-below">
         <div className="footer-copyright">
           <p>
-              {(new Date().getFullYear())} All right reserved ---&gt; (EduRiTT). 
+              {(new Date().getFullYear())} All right reserved . 
           </p>
         </div>
         </div>
@@ -96,5 +97,6 @@ const App = () => {
         
   )
 }
+
 
 export default App
